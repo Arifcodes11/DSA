@@ -1,19 +1,17 @@
 package Git.day4;
+
 import java.util.Scanner;
 
-public class p2 {
-    public static void main(String[] args)
-    {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the Number of rows and columns : ");
-        int noOfRows = sc.nextInt();
-        int noOfCols = sc.nextInt();
+public class p2{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int noOfRows=sc.nextInt();
 
-        for(int rows = 1;rows <=noOfRows;rows++ )
+        for(int row=1;row<=noOfRows;row++)
         {
-            for(int cols = 1;cols<=rows;cols++)
+            for(int col=1;col<=row;col++)
             {
-                System.out.print("*");
+                System.out.print("* ");
             }
             System.out.println();
         }
